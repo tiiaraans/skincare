@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('kriteria');
             $table->string('keterangan_kriteria');
+            $table->integer('bobot');
+            $table->float('benefit');
             $table->timestamps();
         });
     }
